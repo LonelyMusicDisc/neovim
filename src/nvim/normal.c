@@ -1970,7 +1970,7 @@ bool add_to_showcmd(int c)
 
   char *p = transchar(c);
   if (*p == ' ') {
-    STRCPY(p, "<20>");
+    STRCPY(p, "<SPC>");
   }
   size_t old_len = strlen(showcmd_buf);
   size_t extra_len = strlen(p);
